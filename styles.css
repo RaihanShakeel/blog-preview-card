@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url('assets/fonts/static/Figtree-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Figtree-ExtraBold;
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: Figtree;
+    font: weight 500;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    width: 30%;
+    height:auto;background-color: #fff;
+    padding: 2%;
+    margin: 2%;
+    line-height: 1.5;
+    border-radius: 20px;
+    box-shadow: 5px 5px  #000 ;
+}
+.container:hover{
+    box-shadow: 10px 10px  #000 ;
+    transform: scale(1.02);
+    transition: transform 500ms ease;
+}
+
+.container #blog-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+h1{
+    font-family: Figtree-ExtraBold;
+    font-size: 1.5rem;
+    padding: 1%;
+    margin: 1%;
+    font-weight: bold;
+    color: hsl(47, 88%, 63%);
+}
+
+
+
+p{
+    padding: 1%;
+    margin: 1%;
+    font-weight: 400;
+
+}
+.container #catagory{
+    font-family: Figtree-ExtraBold;
+    display: inline-block;
+    width: 80px;
+    padding: 1%;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container #date{
+    font-family: Figtree-ExtraBold;
+}
+
+.container #description{
+    color: hsl(0, 0%, 50%);
+}
+
+.writer{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    gap: 3%;
+    font-family: Figtree-ExtraBold;
+
+}
+.writer #profile-img{
+    width: 10%;
+}
+
+@media (max-width: 375px){
+
+    html, body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        font-family: Figtree;
+        font: weight 500;
+        background-color: hsl(47, 88%, 63%);
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        border: 1px solid #000;
+        width: 80%;
+        height:auto;background-color: #fff;
+        padding: 2%;
+        margin: 10%;
+        line-height: 1.5;
+        border-radius: 20px;
+        box-shadow: 5px 5px  #000 ;
+    }
+
+}
